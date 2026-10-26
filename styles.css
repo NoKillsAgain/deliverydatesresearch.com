@@ -90,6 +90,24 @@ background:linear-gradient(105deg,rgba(255,255,255,.08) 0,rgba(255,255,255,0) 6%
 .contact-form input,.contact-form textarea{font:16px Inter,sans-serif;color:var(--ink);border:1px solid #cfd6de;padding:13px 14px;border-radius:0;background:#fff;text-transform:none;letter-spacing:0;transition:border-color .2s,box-shadow .2s}
 .contact-form input:focus,.contact-form textarea:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(242,169,0,.3)}
 .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+/* newsletter card + find us */
+.nl-card{position:relative;display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center;background:linear-gradient(135deg,var(--navy) 0%,#0e2748 100%);color:#fff;padding:64px;border-top:3px solid var(--amber);box-shadow:0 40px 80px -40px rgba(11,31,58,.55);overflow:hidden}
+.nl-card:after{content:"";position:absolute;right:-120px;top:-120px;width:360px;height:360px;border:1px solid rgba(242,169,0,.18);border-radius:50%;pointer-events:none}
+.nl-card h2{color:#fff;font-size:clamp(40px,4.4vw,58px);margin:0 0 14px}
+.nl-sub{font:italic 22px/1.4 "EB Garamond",Georgia,serif;color:var(--gray);margin:0 0 22px;max-width:460px}
+.nl-meta{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:rgba(201,209,220,.75);margin:0;padding-top:18px;border-top:1px solid rgba(255,255,255,.12)}
+.nl-sub-block{position:relative;z-index:1;display:flex;flex-direction:column;gap:16px}
+.nl-card .embed{background:#fff;border:0;padding:14px;min-height:150px;box-shadow:0 24px 48px -24px rgba(0,0,0,.5);background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='40'%3E%3Ctext x='0' y='26' font-family='Georgia' font-style='italic' font-size='17' fill='%230B1F3A'%3EDelivery Dates%3C/text%3E%3C/svg%3E") 22px 22px no-repeat}
+.nl-btn{width:100%}
+.findus{margin-top:72px}
+.fu-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.fu{position:relative;display:flex;flex-direction:column;gap:4px;padding:30px 26px 26px;background:#fff;border:1px solid var(--line);border-top:2px solid var(--navy);text-decoration:none;color:var(--ink);transition:transform .25s,box-shadow .25s,border-color .25s}
+.fu:hover{transform:translateY(-4px);box-shadow:0 26px 50px -28px rgba(11,31,58,.4);border-top-color:var(--amber)}
+.fu-ic{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border:1px solid #e6c46e;background:#fdf8ec;color:#b37d00;margin-bottom:18px}.fu-ic .ic{width:20px;height:20px}
+.fu b{font:500 25px/1.2 "EB Garamond",Georgia,serif;color:var(--navy)}.fu span{font-size:14px;color:var(--muted)}
+.fu i{font-style:normal;margin-top:20px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--navy)}.fu:hover i{color:#8a5f00}
+@media(max-width:900px){.nl-card{grid-template-columns:1fr;gap:36px;padding:40px 26px}.fu-grid{grid-template-columns:1fr 1fr;gap:14px}.fu{padding:24px 20px}}
+@media(max-width:520px){.fu-grid{grid-template-columns:1fr}}
 /* footer */
 footer.site{background:#081629;color:var(--gray);padding:80px 0 36px;font-size:14px}
 .f-top{display:grid;grid-template-columns:1.8fr repeat(4,1fr);gap:40px;padding-bottom:56px;border-bottom:1px solid rgba(255,255,255,.1)}
