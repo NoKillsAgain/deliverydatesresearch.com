@@ -182,3 +182,4 @@ footer.site{background:#081629;color:var(--gray);padding:80px 0 36px;font-size:1
 .f-bot a.f-support{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;letter-spacing:.02em}
 .f-bot a.f-support::after{content:"";display:inline-block;width:5px;height:5px;margin-left:6px;border-radius:50%;background:#6FB7FF;opacity:.55;vertical-align:middle;transition:opacity .2s,box-shadow .2s}
 .f-bot a.f-support:hover::after{opacity:1;box-shadow:0 0 6px #6FB7FF}
+.t-price.t-contact{font-size:30px;line-height:1.2;padding:12px 0 8px}@media(max-width:900px){.t-price.t-contact{font-size:26px}}
