@@ -178,3 +178,7 @@ footer.site{background:#081629;color:var(--gray);padding:80px 0 36px;font-size:1
 @supports (animation-timeline:view()){.tier,.rule{animation-timeline:view();animation-range:entry 0% entry 40%;animation-delay:0s}}}
 @media (prefers-reduced-motion:reduce){.tier:hover,.rule:hover,.tier:hover .t-cta em{transform:none}}
 @media(max-width:900px){.tiers,.rules{grid-template-columns:1fr;gap:28px}.t-price{font-size:46px}}
+/* footer support link */
+.f-bot a.f-support{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;letter-spacing:.02em}
+.f-bot a.f-support::after{content:"";display:inline-block;width:5px;height:5px;margin-left:6px;border-radius:50%;background:#6FB7FF;opacity:.55;vertical-align:middle;transition:opacity .2s,box-shadow .2s}
+.f-bot a.f-support:hover::after{opacity:1;box-shadow:0 0 6px #6FB7FF}
