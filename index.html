@@ -14,6 +14,28 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<style>
+/* r1 homepage hero (draft) */
+.hero.hv{padding:104px 0 64px}
+.hv .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:48px;align-items:center}
+.hv h1{font-size:clamp(34px,4.6vw,56px);line-height:1.06;margin:.2em 0 .35em}
+.hv h1 em{color:#F2A900;font-style:italic}
+.hv .sub{max-width:34em}
+.hv .hero-facts{display:flex;flex-wrap:wrap;gap:10px 22px;margin:0 0 26px;padding:0;list-style:none;font:500 15px/1.3 Inter,sans-serif;color:#E8EEF5}
+.hv .hero-facts b{display:block;font:600 26px/1.1 Inter,sans-serif;color:#F2A900}
+.hv .actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.hv .course{display:inline-block;margin-top:16px;color:#C9D1DC;font:500 14px/1.4 Inter,sans-serif}
+.hv .course:hover{color:#F2A900}
+.hero-video{margin:0;border-radius:14px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.45),0 0 0 1px rgba(242,169,0,.25);background:#0B1F3A;aspect-ratio:16/9}
+.hero-video video{display:block;width:100%;height:100%;object-fit:cover}
+.hero-video figcaption{font:400 12px/1.4 Inter,sans-serif;color:#9fb0c4;padding:8px 2px 0;background:none}
+.hv-cap{font:400 12px/1.4 Inter,sans-serif;color:#9fb0c4;margin:8px 2px 0}
+@media (max-width:860px){.hv .hero-grid{grid-template-columns:1fr;gap:28px}.hero.hv{padding:32px 0 44px}.hero.hv{padding-top:96px}}
+.hv .hero-art{display:none}
+.hv .hero-copy,.hv .hero-media{position:relative;z-index:1}
+@media (prefers-reduced-motion:reduce){.hero-video video{display:none}.hero-video{background:#0B1F3A url(assets/hero-poster.jpg) center/cover no-repeat}}
+.nl-embed-wrap{max-width:620px;margin:18px 0 0}
+</style>
 <script src="https://gumroad.com/js/gumroad.js" defer></script>
 <!-- Analytics placeholder (GoatCounter, free and cookieless). Uncomment after creating the account:
 <script data-goatcounter="https://ddresearch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
@@ -35,19 +57,26 @@
 <header class="site"><div class="wrap bar"><a class="brand" href="#top"><img src="assets/ddr_logo_800.png" alt="" width="40" height="40"><span>Delivery Dates Research</span></a>
 <nav><a href="#research">Research</a><a href="#newsletter">Newsletter</a><a href="#contact">Contact</a><a class="nav-cta" href="https://ddresearch.gumroad.com/l/delivery-dates">Get the report</a></nav></div></header>
 
-<section class="hero" id="top">
+<section class="hero hv" id="top">
 <svg class="hero-art" viewBox="0 0 1200 120" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
 <g stroke="#F2A900" fill="none" stroke-linecap="round"><line x1="0" y1="70" x2="1200" y2="70" stroke-width="1.5" opacity=".45"/>
 <g stroke-width="1.5" opacity=".5"><line x1="80" y1="56" x2="80" y2="84"/><line x1="300" y1="56" x2="300" y2="84"/><line x1="520" y1="56" x2="520" y2="84"/><line x1="740" y1="56" x2="740" y2="84"/></g>
 <line x1="960" y1="56" x2="960" y2="84" stroke-width="1.5" stroke-dasharray="3 5" opacity=".35"/>
 <path d="M960 46 C 1000 22, 1050 22, 1090 44" stroke-width="1.25" stroke-dasharray="3 5" opacity=".55"/>
 <line x1="1090" y1="46" x2="1090" y2="94" stroke-width="4" opacity=".95"/></g></svg>
-<div class="wrap hero-in reveal"><p class="eyebrow light">Independent of the companies covered · Data-center delivery dates, checked against SEC filings</p>
-<h1>Promised dates <em>vs.</em><br>SEC filings</h1>
-<p class="sub">We compare the delivery dates companies promise with what their SEC filings later report.</p>
-<div class="nl-sub-block" style="max-width:620px;margin:0 0 32px"><div class="embed"><iframe src="https://deliverydates.substack.com/embed" title="Subscribe to Delivery Dates" height="150" frameborder="0" scrolling="no"></iframe></div>
-<a class="btn amber nl-btn" href="https://deliverydates.substack.com/subscribe">Subscribe free<svg class="ic"><use href="#i-arrow"/></svg></a></div>
-<div class="actions"><a class="btn amber" href="https://deliverydates.substack.com/p/data-center-delivery-dates-22-of">Read the free summary<svg class="ic"><use href="#i-arrow"/></svg></a><a class="btn ghost" href="https://ddresearch.gumroad.com/l/delivery-dates">Get the report</a></div></div></section>
+<div class="wrap hero-in hero-grid">
+<div class="hero-copy"><p class="eyebrow light">Independent of the companies covered · Data-center delivery dates, checked against SEC filings</p>
+<h1>29 of 79 past-due promises <em>slipped.</em></h1>
+<p class="sub">We are currently tracking 79 past-due delivery promises from data-center operators' own SEC filings, and checking each one against what later filings report.</p>
+<ul class="hero-facts" aria-label="Key figures">
+<li><b>36.7%</b>slipped</li><li><b>21 + 8</b>late + moved later</li><li><b>62 days</b>median lateness</li><li><b>1–366</b>range, days</li></ul>
+<div class="actions"><a class="btn amber" href="https://deliverydates.substack.com/subscribe">Subscribe free<svg class="ic"><use href="#i-arrow"/></svg></a><a class="btn ghost" href="https://deliverydates.substack.com/p/data-center-delivery-dates-22-of">Read the free summary</a><a class="btn ghost" href="https://ddresearch.gumroad.com/l/delivery-dates" data-gumroad-overlay-checkout="true">Get the $99 report</a></div>
+<a class="course" href="https://ddresearch.gumroad.com/l/bucmip">New here? Take the free course on reading delivery dates in SEC filings →</a></div>
+<div class="hero-media"><figure class="hero-video"><video autoplay muted loop playsinline preload="metadata" poster="assets/hero-poster.jpg" width="1280" height="720" aria-label="Silent 51-second video: we are currently tracking 79 past-due promises; 29 slipped (36.7%), 21 late and 8 moved to a later date; median 62 days late, range 1 to 366 days.">
+<source src="assets/hero-textmusic-720.mp4" type="video/mp4"><source src="assets/hero-textmusic-720.webm" type="video/webm">
+<img src="assets/hero-poster.jpg" alt="29 of 79 past-due promises slipped, 36.7%" width="1280" height="720"></video></figure>
+<p class="hv-cap">Source: SEC EDGAR filings. Text and music, no narration.</p></div>
+</div></section>
 
 <section class="stats"><div class="wrap stat-grid">
 <div><b>29 of 79</b><span>Past-due promises slipped</span></div>
@@ -95,11 +124,11 @@
 <li><svg class="ic lg"><use href="#i-pub"/></svg><span class="n">03</span><h3>Publish</h3><p>The slips, with sources.</p></li></ol>
 <p class="method">Each edition is based on proprietary analysis of public SEC filings.</p></div></section>
 <!-- Methods: two counting rules. Insert in index.html directly after <section class="how">…</section>. Uses existing classes only. -->
-<section class="how" id="counting-rules"><div class="wrap reveal"><p class="eyebrow">Methods</p><h2>Two rules for keeping score</h2>
-<p>A promised date only counts as kept when a filing proves the thing promised actually happened by then. Two rules make that precise.</p>
+<section class="how" id="counting-rules"><div class="wrap reveal"><p class="eyebrow">Methods</p><h2>Two counting rules</h2>
+<p>A promise only counts as delivered on time when a filing proves the thing promised actually happened by then. Two rules make that precise.</p>
 <ol class="steps">
-<li><span class="n">01</span><h3>Starting isn't finishing</h3><p>If a filing promised to <em>begin</em> work by a date, starting by that date keeps it. If it promised to <em>finish</em> or <em>switch on</em>, breaking ground doesn't count. Only completion or energization does.</p>
-<p class="note">Example (hypothetical): "Energize by March 31." A later filing says construction began in February and power came on May 12. Kept? No. Counted as delivered May 12.</p></li>
+<li><span class="n">01</span><h3>Starting isn't finishing</h3><p>If a filing promised to <em>begin</em> work by a date, starting by that date counts as on time. If it promised to <em>finish</em> or <em>switch on</em>, breaking ground doesn't count. Only completion or energization does.</p>
+<p class="note">Example (hypothetical): "Energize by March 31." A later filing says construction began in February and power came on May 12. On time? No. Counted as delivered May 12.</p></li>
 <li><span class="n">02</span><h3>The calendar doesn't get credit</h3><p>Monthly reports cover a whole month, so the month's last day proves nothing on its own. We use the first date a filing actually proves delivery: the exact date if it gives one, otherwise the date the report was filed.</p>
 <p class="note">Example (hypothetical): "Online by June 30." A June operating update, filed July 8, reports the site live with no exact date. Counted as delivered July 8, not June 30.</p></li>
 </ol>
@@ -113,7 +142,7 @@
 
 <section id="newsletter" class="newsletter"><div class="wrap reveal">
 <div class="nl-card"><div class="nl-copy"><p class="eyebrow light">The newsletter</p><h2>Delivery Dates</h2><p class="nl-sub">New editions every Monday. Filing of the Week every Tuesday.</p><p class="nl-meta">Free by email · Unsubscribe anytime · Proprietary analysis of public SEC filings</p></div>
-<div class="nl-sub-block"><a class="btn amber nl-btn" href="https://deliverydates.substack.com/subscribe">Subscribe free<svg class="ic"><use href="#i-arrow"/></svg></a></div></div>
+<div class="nl-sub-block"><a class="btn amber nl-btn" href="https://deliverydates.substack.com/subscribe">Subscribe free<svg class="ic"><use href="#i-arrow"/></svg></a><div class="embed nl-embed-wrap"><iframe src="https://deliverydates.substack.com/embed" title="Subscribe to Delivery Dates" height="150" frameborder="0" scrolling="no" loading="lazy"></iframe></div></div></div>
 <div class="findus"><div class="fu-head"><p class="eyebrow">Find us</p><h3 class="fu-title">Follow the work wherever you read</h3></div><div class="fu-grid">
 <a class="fu fu-sub" href="https://deliverydates.substack.com/"><span class="fu-ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M4 3h16v2.4H4zM4 7.6h16V10H4zM4 12.2h16V21l-8-4.5L4 21z"/></svg></span><b>Newsletter</b><span>Delivery Dates on Substack</span><i>Subscribe free <em>→</em></i></a>
 <a class="fu fu-pdf" href="https://ddresearch.gumroad.com/l/delivery-dates"><span class="fu-ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span><b>Research PDF</b><span>The 8-company report</span><i>Get the $99 report <em>→</em></i></a>
