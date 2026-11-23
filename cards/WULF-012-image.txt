@@ -1,0 +1,10 @@
+source page URL: https://www.sec.gov/Archives/edgar/data/1083301/0001083301-22-000057-index.html
+license name: self-made (original work)
+license URL: n/a (original work by Delivery Dates Research)
+creator's name: Delivery Dates Research
+date checked: 2026-11-22 (America/Los_Angeles)
+sha256 of the image file: 2282ef4a4bbf1f08f077765ef821993bb556ec999fa7cb72a3840823454b96cb
+row_id: WULF-012
+chart/table source: live explore.html sha8 973775d4
+filing field on card: 0001083301-23-000008
+other SEC.gov URLs in the row: https://www.sec.gov/Archives/edgar/data/1083301/0001083301-23-000008-index.html

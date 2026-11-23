@@ -183,3 +183,23 @@ footer.site{background:#081629;color:var(--gray);padding:80px 0 36px;font-size:1
 .f-bot a.f-support::after{content:"";display:inline-block;width:5px;height:5px;margin-left:6px;border-radius:50%;background:#6FB7FF;opacity:.55;vertical-align:middle;transition:opacity .2s,box-shadow .2s}
 .f-bot a.f-support:hover::after{opacity:1;box-shadow:0 0 6px #6FB7FF}
 .t-price.t-contact{font-size:30px;line-height:1.2;padding:12px 0 8px}@media(max-width:900px){.t-price.t-contact{font-size:26px}}
+
+
+/* build-r1: keep header links visible and keyboard-reachable on small screens */
+@media(max-width:700px){
+  nav a:not(.nav-cta){display:inline-flex !important}
+  nav{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;justify-content:flex-end}
+  header.site .wrap.bar{height:auto;min-height:72px;padding:10px 0;gap:10px}
+}
+header.site nav a:focus-visible{outline:2px solid #F2A900;outline-offset:3px}
+/* build-r1: footer links inherited navy-on-navy (1.09:1). Lighten for WCAG AA. */
+footer.site a{color:#C5D0DE}
+footer.site a:hover,footer.site a:focus-visible{color:#F2A900}
+/* Footer column labels are not headings (live used h4 after h1). */
+.f-top .f-col-title{font:600 11px Inter,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin:6px 0 18px}
+/* Sticky header offset. 73px = measured 72px bar + 1px border at desktop.
+   A small script sets --ddr-header-h to the live header height (117px at 390px
+   on the Index/license header, 111px on coverage/promise). */
+:root{--ddr-header-h:73px}
+@media(max-width:480px){:root{--ddr-header-h:117px}}
+[id]{scroll-margin-top:var(--ddr-header-h)}
