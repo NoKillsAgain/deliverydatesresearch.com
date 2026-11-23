@@ -1,0 +1,10 @@
+source page URL: https://www.sec.gov/Archives/edgar/data/1819989/0000950170-24-053937-index.html
+license name: self-made (original work)
+license URL: n/a (original work by Delivery Dates Research)
+creator's name: Delivery Dates Research
+date checked: 2026-11-22 (America/Los_Angeles)
+sha256 of the image file: 82b6300dece68dd1015765a547a0c27837e90a48fb76eb8028fce1aa5a2df27e
+row_id: CIFR-002
+chart/table source: live explore.html sha8 973775d4
+filing field on card: 0001819989-25-000005
+other SEC.gov URLs in the row: https://www.sec.gov/Archives/edgar/data/1819989/0001819989-25-000005-index.html

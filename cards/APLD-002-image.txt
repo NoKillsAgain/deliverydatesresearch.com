@@ -1,0 +1,10 @@
+source page URL: https://www.sec.gov/Archives/edgar/data/1144879/0001641172-25-013199-index.html
+license name: self-made (original work)
+license URL: n/a (original work by Delivery Dates Research)
+creator's name: Delivery Dates Research
+date checked: 2026-11-22 (America/Los_Angeles)
+sha256 of the image file: 1eea92364455503a185fa9ab8f7df38ac4cf1fea37698919bbd81aa7ef2e05b3
+row_id: APLD-002
+chart/table source: live explore.html sha8 973775d4
+filing field on card: 0001144879-26-000006
+other SEC.gov URLs in the row: https://www.sec.gov/Archives/edgar/data/1144879/0001144879-26-000006-index.html

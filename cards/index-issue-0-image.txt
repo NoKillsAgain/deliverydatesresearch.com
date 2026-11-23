@@ -1,0 +1,11 @@
+source page URL: n/a (self-made issue launch card from locked public numbers)
+license name: self-made (original work)
+license URL: n/a (original work by Delivery Dates Research)
+creator's name: Delivery Dates Research
+date checked: 2026-11-22 (America/Los_Angeles)
+sha256 of the image file: 7292fdf89b8a332f21abd0e5e595183d2bfcecc04671e682c6dd82ca44b52860
+wording: exact Index hero lines (Kyle, 7:17 PM PT, Nov 22, 2026)
+headline: Bitcoin miners and AI data centers filed 79 delivery dates with the SEC, all due between December 2021 and September 2026. 41 were delivered on time.
+subline: 51.9% · as of Oct. 7, 2026 · from the companies' own SEC filings
+so-what: Using a company's stated date in your model? Check the record first.
+chart/table source: live explore.html sha8 973775d4
